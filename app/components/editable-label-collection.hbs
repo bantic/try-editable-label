@@ -1,0 +1,33 @@
+Variables:
+<ul>
+  <li>
+    Mortgage: {{this.mortgage}}
+  </li>
+  <li>
+    Item: {{this.item}}
+  </li>
+  <li>
+    Rate: {{this.rate}}
+  </li>
+  <li>
+    Term: {{this.term}}
+  </li>
+  <li>
+    Loan: {{this.loan}}
+  </li>
+</ul>
+<hr />
+Once upon a time there was a
+<EditableLabel @text={{this.mortgage}} @onInput={{fn (mut this.mortgage)}} />
+calculator for
+a
+<EditableLabel @text={{this.item}} @onInput={{fn (mut this.item)}} />
+with a rate of
+<EditableLabel @text={{this.rate}} @onInput={{fn (mut this.rate)}} />
+% and a term of
+<EditableLabel @text={{this.term}} @onInput={{fn (mut this.term)}} />
+years and
+loan amount of
+$
+<EditableLabel @text={{this.loan}} @onInput={{fn (mut this.loan)}} />
+and total interest of {{this.calculatedInterest}}.
