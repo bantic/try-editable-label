@@ -3,7 +3,7 @@ import { action } from "@ember/object";
 
 export default class EditableLabelComponent extends Component {
   @action
-  onInput(evt) {
-    this.args.onInput(evt.target.innerText);
+  onBlur(evt) {
+    this.args.onBlur(evt.target.innerText);
   }
 }
